@@ -29,7 +29,7 @@ export const articleListLoadData = () => {
             })
         .then(response => response.json())
         .then(data => {
-            dispatch(articleListHasLoaded(data));
+            dispatch(articleListHasLoaded(data.articles));
         })
         .catch(error => {
             console.log(error);
