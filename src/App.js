@@ -8,6 +8,7 @@ import Home from './containers/Home';
 import Login from './containers/Login/Login';
 import Register from './containers/Register';
 import Article from './containers/ArticleList/Article';
+import Author from './containers/Author/Author';
 
 class App extends Component {
 
@@ -23,6 +24,7 @@ class App extends Component {
           <Route path="/login" component={Login}/>
           <Route path="/register" component={Register}/>
           <Route path="/article/:id" component={Article}/>
+          <Route path="/author/:id" component={Author}/>
         </Switch>
       </main>
     );

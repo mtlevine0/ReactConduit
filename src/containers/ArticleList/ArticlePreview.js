@@ -9,7 +9,7 @@ class ArticlePreview extends Component {
         return (
             <div className="card border-0">
                 <div className="card-body d-flex justify-content-between">
-                    <Link to="/article/article1">
+                    <Link to={"/article/" + this.props.article.slug}>
                         <h5 className="card-title">{this.props.article.title}</h5>
                         <p className="card-text">{this.props.article.body}</p>
                     </Link>
